@@ -2,8 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #200130; /* A warm, gentle background color */
-    color: #ece4de;
+    background-color: #130130; /* A warm, gentle background color */
+    color: #d8d3a9;
     margin: 0;
     padding: 20px;
 }
@@ -16,7 +16,7 @@ main {
 
 /* Make the title stand out */
 header h1 {
-    color: #e4adbf; /* A nice celebratory pink/red */
+    color: #d8d3a9; /* A nice celebratory pink/red */
 }
 
 /* Image styling to make it look framed */
