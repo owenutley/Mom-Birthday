@@ -1,6 +1,20 @@
 // Grab the button element from your HTML
 const surpriseBtn = document.getElementById('surpriseBtn');
 
+window.onload = function() {
+    // These options make the confetti fall slowly from the top
+    confetti({
+        particleCount: 150, // How many pieces of confetti
+        spread: 160,         // Wide spread
+        startVelocity: 15,  // Slow start speed
+        origin: { y: -0.1 }, // Starts just ABOVE the top of the screen (-0.1)
+        gravity: 0.8,       // Confetti is heavier so it falls
+        ticks: 400,         // Makes the confetti visible for longer
+        // Optional: Custom colors (use your theme colors!)
+        colors: ['#d23669', '#fdf6e3', '#a1284f'] 
+    });
+};
+
 // --- Slideshow Logic ---
 
 let currentSlideIndex = 0;
