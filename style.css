@@ -44,3 +44,69 @@ button {
 button:hover {
     background-color: #a1284f;
 }
+
+/* --- Slideshow Styles --- */
+
+/* --- Updated Slideshow Styles --- */
+
+.slideshow-container {
+    position: relative; 
+    width: 100%;
+    max-width: 600px; /* Limits how wide the slideshow can get */
+    height: 400px; /* Sets a fixed height so the page doesn't jump around */
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #222; /* A dark background frames the photos nicely */
+}
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+}
+
+/* Only show the slide with the 'active' class */
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%; 
+    height: 400px; /* Must match the container height */
+    
+    /* 
+       'contain' ensures the whole photo is visible without cropping. 
+       If you prefer the photos to fill the entire box edge-to-edge 
+       (even if it means cropping the edges slightly), change this to 'cover'. 
+    */
+    object-fit: contain; 
+    display: block; 
+}
+
+/* Style the previous and next buttons */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Perfectly centers them vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 0; /* Overrides the margin from the main button style */
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.slide-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
