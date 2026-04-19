@@ -62,7 +62,20 @@ button:hover {
 }
 
 /* Hide all slides by default */
+
+.slide-number {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Helps it show up on light backgrounds */
+    z-index: 2;
+}
+
 .slide {
+    position: relative; /* Keeps the slide number pinned inside the slide */
     display: none;
 }
 
