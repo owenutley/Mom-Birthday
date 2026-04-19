@@ -2,8 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #fdf6e3; /* A warm, gentle background color */
-    color: #333;
+    background-color: #200130; /* A warm, gentle background color */
+    color: #ece4de;
     margin: 0;
     padding: 20px;
 }
@@ -16,7 +16,7 @@ main {
 
 /* Make the title stand out */
 header h1 {
-    color: #d23669; /* A nice celebratory pink/red */
+    color: #e4adbf; /* A nice celebratory pink/red */
 }
 
 /* Image styling to make it look framed */
@@ -109,4 +109,11 @@ button:hover {
 
 .slide-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.message-board {
+    padding: 5px 95px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
 }
