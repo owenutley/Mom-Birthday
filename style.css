@@ -1,0 +1,46 @@
+/* Basic page setup */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fdf6e3; /* A warm, gentle background color */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container to keep everything centered and readable */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Make the title stand out */
+header h1 {
+    color: #d23669; /* A nice celebratory pink/red */
+}
+
+/* Image styling to make it look framed */
+.photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Style the surprise button */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #d23669;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Add a slight hover effect to the button */
+button:hover {
+    background-color: #a1284f;
+}
